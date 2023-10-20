@@ -131,7 +131,7 @@ class DescubrePage extends StatelessWidget {
                       height: 45.v,
                       width: 44.h, // Botones ubicados arriba
                       margin:
-                          EdgeInsets.only(left: 23.h, top: 5.v, bottom: 50.v),
+                          EdgeInsets.only(left: 23.h, top: 5.v, bottom: 50),
                       padding: EdgeInsets.all(5.h),
                       child: CustomImageView(
                         imagePath: ImageConstant.imgGroup25,

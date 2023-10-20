@@ -66,7 +66,7 @@ class RegistrateScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              SizedBox(height: 74.0),
+                              SizedBox(height: 80.0),
                               Container(
                                 width: 263.0,
                                 decoration: AppDecoration.outlineBlack900,
@@ -174,13 +174,13 @@ class RegistrateScreen extends StatelessWidget {
               ),
               CustomImageView(
                 imagePath: ImageConstant.imgEllipse2,
-                height: 91.0,
-                width: 200.0,
+                height: 96.0,
+                width: 215.0,
                 alignment: Alignment.topCenter,
               ),
               CustomImageView(
                 imagePath: ImageConstant.imgViajasmart2mesa,
-                height: 86.0,
+                height: 78.0,
                 width: 83.0,
                 alignment: Alignment.topCenter,
                 margin: EdgeInsets.only(top: 14.0),

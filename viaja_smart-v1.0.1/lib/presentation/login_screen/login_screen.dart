@@ -208,7 +208,11 @@ class LoginScreen extends StatelessWidget {
                                                                           .titleMediumRedA400,
                                                                   alignment:
                                                                       Alignment
-                                                                          .center),
+                                                                          .center,
+                                                                  onTap: () {
+                                                                  onTapFinish(context);
+                                                                  }),
+                                                                  
                                                               SizedBox(
                                                                   height: 14.v),
                                                               SizedBox(
@@ -220,16 +224,18 @@ class LoginScreen extends StatelessWidget {
                                                                               .topLeft,
                                                                       children: [
                                                                         Align(
-                                                                            alignment: Alignment
-                                                                                .center,
-                                                                            child: Container(
-                                                                                width: 147.h,
-                                                                                decoration: AppDecoration.outlineBlack9001,
-                                                                                child: Text("Or", maxLines: null, overflow: TextOverflow.ellipsis, style: theme.textTheme.bodyMedium))),
-                                                                        Align(
                                                                             alignment:
                                                                                 Alignment.topLeft,
                                                                             child: Padding(padding: EdgeInsets.only(top: 9.v), child: SizedBox(width: 105.h, child: Divider()))),
+                                                                        
+                                                                          Align(
+                                                                            alignment: Alignment
+                                                                                .center,
+                                                                            child: Container(
+                                                                                width: 20.h,
+                                                                                decoration: AppDecoration.outlineBlack9001,
+                                                                                child: Text("Or", maxLines: null, overflow: TextOverflow.ellipsis, style: theme.textTheme.bodyMedium))),
+
                                                                         Align(
                                                                             alignment:
                                                                                 Alignment.topRight,
@@ -243,7 +249,7 @@ class LoginScreen extends StatelessWidget {
                                                                           .center,
                                                                   child: Container(
                                                                       width:
-                                                                          147.h,
+                                                                          100.h,
                                                                       decoration:
                                                                           AppDecoration
                                                                               .outlineBlack9001,
@@ -259,7 +265,7 @@ class LoginScreen extends StatelessWidget {
                                                               Padding(
                                                                   padding: EdgeInsets
                                                                       .only(
-                                                                          left: 41
+                                                                          left: 40
                                                                               .h,
                                                                           top: 3
                                                                               .v),
@@ -280,28 +286,29 @@ class LoginScreen extends StatelessWidget {
                                                             ]))),
                                                 Align(
                                                     alignment:
-                                                        Alignment.bottomCenter,
+                                                        Alignment.center,
                                                     child: Container(
                                                         height: 60.v,
                                                         width: 303.h,
                                                         margin: EdgeInsets.only(
-                                                            bottom: 179.v),
+                                                            bottom: 2.v,left: 10),
                                                         child: Stack(
                                                             alignment: Alignment
                                                                 .centerRight,
                                                             children: [
+                                                            
                                                               Align(
                                                                   alignment:
                                                                       Alignment
                                                                           .centerLeft,
                                                                   child: Container(
                                                                       width:
-                                                                          252.h,
+                                                                          160.h,
                                                                       decoration:
                                                                           AppDecoration
                                                                               .outlineBlack9001,
                                                                       child: Text(
-                                                                          "Don't have an account?,",
+                                                                          "Don't have an account?",
                                                                           maxLines:
                                                                               null,
                                                                           overflow: TextOverflow
@@ -309,17 +316,20 @@ class LoginScreen extends StatelessWidget {
                                                                           style: theme
                                                                               .textTheme
                                                                               .bodyMedium))),
+                                                            
                                                               Align(
                                                                   alignment:
                                                                       Alignment
                                                                           .centerRight,
                                                                   child:
                                                                       GestureDetector(
+                                                                          
                                                                           onTap:
                                                                               () {
                                                                             onTapTxtSignup(context);
                                                                           },
                                                                           child: Container(
+                                                                              margin: EdgeInsets.only(),
                                                                               width: 140.h,
                                                                               decoration: AppDecoration.outlineBlack9001,
                                                                               child: Text("sign up", maxLines: null, overflow: TextOverflow.ellipsis, style: CustomTextStyles.titleSmallBold))))
@@ -344,4 +354,9 @@ class LoginScreen extends StatelessWidget {
   onTapTxtSignup(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.signUpScreen);
   }
+
+  onTapFinish(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.descubreContainerScreen);
+  }
+
 }

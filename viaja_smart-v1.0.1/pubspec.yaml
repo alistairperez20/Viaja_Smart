@@ -1,26 +1,27 @@
 name: viaja_smart
 description: A new Flutter project.
 version: 1.0.0+1
-environment: 
+environment:
   sdk: '>=2.12.0 <3.0.0'
-dependencies: 
-  flutter: 
+dependencies:
+  flutter:
     sdk: flutter
   cached_network_image: ^3.2.1
   flutter_svg: ^1.1.6
   outline_gradient_button: ^2.0.0+1
   intl: ^0.18.0
-dev_dependencies: 
-  flutter_test: 
+  sqflite: ^2.0.0  # Agregamos la dependencia de sqflite aquí
+dev_dependencies:
+  flutter_test:
     sdk: flutter
-flutter: 
+flutter:
   uses-material-design: true
-  assets: 
+  assets:
     - assets/
     - assets/images/
-  fonts: 
+  fonts:
     - family: Inter
-      fonts: 
+      fonts:
         - asset: assets/fonts/InterBold.ttf
           weight: 700
         - asset: assets/fonts/InterLight.ttf
